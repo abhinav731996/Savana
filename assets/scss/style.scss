@@ -9,9 +9,10 @@
 
 $theme-colors: map-merge($theme-colors , $coustom_theme_colors);
 
+// $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
+
 @import"./../../node_modules/bootstrap/scss/bootstrap.scss";
 
-*{
-    margin: 0;
-    padding: 0;
+.primary-light{
+    background-color: $primary-light;
 }
