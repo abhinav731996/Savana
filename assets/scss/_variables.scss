@@ -1,6 +1,7 @@
 $accent:#C47A5F;
 $primary: #F4EDE5;
 $primary-light: #f3f5fc;
+$secondary: #513125;
 
 
 $coustom_theme_colors: (
@@ -42,20 +43,23 @@ $nav-link-font-size: $font-size-base * 1.0625;
 $nav-link-font-weight: 500;
 $nav-link-transition:  color .4s ease-in-out, background-color .4s ease-in-out, border-color .4s ease-in-out !default;
 $nav-link-padding-x: .75rem;
+$nav-link-color: #513125;
+$navbar-light-hover-color: $accent;
+$navbar-light-active-color: $accent;
 
 // ******* spacers ********
 
 $spacer: 1rem;
 $spacers: (
   0: 0,
-  1: $spacer * .75,
+  1: $spacer * .75,     //(12px)
   2: $spacer,
-  3: $spacer * 1.25,
-  4: $spacer * 2.5,
-  5: $spacer * 3.75,
-  6: $spacer * 9.0625,
-  7: $spacer * 15.625,
-  8: $spacer * 18.125,
+  3: $spacer * 1.25,    //(20px)
+  4: $spacer * 2.5,     //(40px)
+  5: $spacer * 3.75,    //(60px)
+  6: $spacer * 9.0625,  //(145px)
+  7: $spacer * 15.625,  //(250px)
+  8: $spacer * 18.125,  //(290px)
 );
 
 
