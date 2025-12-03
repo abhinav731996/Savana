@@ -16,3 +16,7 @@ $theme-colors: map-merge($theme-colors , $coustom_theme_colors);
 .primary-light{
     background-color: $primary-light;
 }
+
+.footer-bottom{
+    --bs-border-opacity: .3;
+}
