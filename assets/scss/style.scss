@@ -17,6 +17,12 @@ $theme-colors: map-merge($theme-colors , $coustom_theme_colors);
     background-color: $primary-light;
 }
 
+
 .footer-bottom{
     --bs-border-opacity: .3;
+}
+.line{
+    width: 108px;
+    height: 1.5px;
+    background-color: black;
 }

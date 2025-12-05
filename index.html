@@ -1,90 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Savana</title>
-  </head> 
-  <body>
+</head>
+
+<body>
     <header>
-        <nav>
-            <div class="container d-flex flex-row justify-content-between mt-3 align-items-center text-secondary">
-                <a href="index.html"><img class="img-fluid" src="./assets/images/logo/savana-logo.webp" alt="logo"></a>
-                <ul class="navbar-nav d-flex flex-row gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home <span class="visually-hidden">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container d-flex justify-content-between mt-3 align-items-center text-secondary">
+                <a class="navbar-brand" href="index.html"><img class="img-fluid" src="./assets/images/logo/savana-logo.webp" alt="logo"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
                         <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                         <a class="nav-link" href="#">Courses</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav d-flex flex-row gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-twitter"></i></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-linkedin"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="collapse"  role="button" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"><i class="bi bi-search" ></i></a>
-                        <div
-                        class="position-absolute end-0 top-0 h-100"
-                        style="min-height: 120px"
-                        >
-                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                            <div class="card card-body" style="width: 300px">
-                            <form action="#" class="d-flex" role="search">
-                                <input 
-                                type="search"
-                                class="form-control me-2"
-                                placeholder="search"
-                                aria-label="search"
-                                />
-                                <button class="btn btn-outline-success" type="submit">
-                                Search
-                                </button>
-                            </form>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    </div>
+
+                    <ul class="navbar-nav d-flex flex-row gap-3 ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-twitter"></i></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="collapse" role="button"
+                                data-bs-target="#collapseWidthExample" aria-expanded="false"
+                                aria-controls="collapseWidthExample"><i class="bi bi-search"></i></a>
+                            <div class="position-absolute end-0 top-0 h-100" style="min-height: 120px">
+                                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                    <div class="card card-body" style="width: 300px">
+                                        <form class="d-flex" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                                            <button class="btn btn-outline-success" type="submit">Search</button>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                    
+                
             </div>
         </nav>
+
+
+
+
+
     </header>
 
     <main>
@@ -93,30 +99,49 @@
                 <div class="row">
                     <div class="col-lg-6 ">
                         <div class="banner-content h-100 d-flex flex-column justify-content-around">
-                            <div class="sub-heading text-accent">SAVANA YOGA</div>
+                            <div class="sub-yoga d-flex align-items-center gap-1">
+                                <div class="sub-heading text-accent">SAVANA YOGA</div>
+                                <div class="line"></div>
+                            </div>
                             <div class="banner-about">
-                                <h2>Bend your mind, inspire yourself</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                                <h2 class="fw-light ">Bend your mind, inspire yourself</h2>
+                                <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus necullamcorper mattis, pulvinar dapibus leo.</p>
                             </div>
                             <div class="d-flex gap-4 my-4 align-items-center">
                                 <a href="#" class="btn btn-secondary">Get Strated</a>
                                 <div class="banner-contact link-underline-primary">
-                                    <a href="tel: 903434059" class="d-flex gap-1 align-items-center link-underline-primary">Contact Us <img class="img-fluid" src="./assets/images/logo/phone.svg" alt="phone"></a>
+                                    <a href="tel: 903434059"
+                                        class="d-flex gap-1 align-items-center link-underline-primary">Contact Us <img
+                                            class="img-fluid" src="./assets/images/logo/phone.svg" alt="phone"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-lg-6">
-                        <img  class="img-fluid" src="./assets/images/banner-img/Yoga practice-bro 1.jpg" alt="yoga-image">
+                        <img class="img-fluid" src="./assets/images/banner-img/yoga-practice.png"
+                            alt="yoga-image">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="about-savana">
-            
+        <section class="about-savana ">
+                <div class="text-center container-fluid border-none d-flex flex-column gap-4 justify-content-center bg-primary">
+                    <div class="container my-6 ">
+                        <div class="sub-about d-flex justify-content-center align-items-center gap-1">
+                            <div class="line"></div>
+                            <h6 class="subtitle mt-1 text-accent  fw-semibold">  ABOUT SAVANA  </h6>
+                            <div class="line"></div>
+                        </div>
+                        <h2 class="fw-light">Happiness is a decision, not a destination. Realize it with us!</h2>
+                        <p class="text-para ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus leo, vestibulum a ipsum sed, suscipit sodales ex. Vestibulum id varius risus. Fusce tempus tellus sed erat scelerisque venenatis. Donec consequat ultrices quam, vitae dignissim mi sodales non.</p>
+                        <a href="#" class="btn btn-accent text-white border-radio">Learn More <i class="bi bi-arrow-right-short"></i></a>
+                    </div>
+                </div>
         </section>
+
+        
     </main>
 
     <footer class="bg-secondary">
@@ -128,23 +153,27 @@
                             <a href="index.html" aria-label="Go to home page">
                                 <img class="img-fluid" src="./assets/images/logo/footer-logo.png" alt="footer logo">
                             </a>
-                            <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Praesent tellus leo, vesti bulum a ipsum sed.</p>
+                            <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Praesent tellus leo, vesti
+                                bulum a ipsum sed.</p>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="d-flex">
                             <div class="touch foot-links">
                                 <h3 class="text-white">Get In Touch</h3>
-                                <a href="#" class="icon-link icon-link-hover text-white"><img src="./assets/images/footer-img/location.svg" alt="">140 Home Street, Plano</a>
-                                <a href="mailto" class="icon-link icon-link-hover text-white"><img src="./assets/images/footer-img/mail.svg" alt="">savana@mail.com</a>
-                                <a href="tel: +1 (234) 567 890" class="icon-link icon-link-hover text-white"><img src="./assets/images/footer-img/phone.svg" alt="">+1 (234) 567 890</a>
+                                <a href="#" class="icon-link icon-link-hover text-white"><img
+                                        src="./assets/images/footer-img/location.svg" alt="">140 Home Street, Plano</a>
+                                <a href="mailto" class="icon-link icon-link-hover text-white"><img
+                                        src="./assets/images/footer-img/mail.svg" alt="">savana@mail.com</a>
+                                <a href="tel: +1 (234) 567 890" class="icon-link icon-link-hover text-white"><img
+                                        src="./assets/images/footer-img/phone.svg" alt="">+1 (234) 567 890</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="quicklinks foot-links">
                             <h3 class="text-white">Quicklinks</h3>
-                            <ul class="list-unstyled d-flex flex-column" >
+                            <ul class="list-unstyled d-flex flex-column">
                                 <li><a class="text-white active" href="index.html">Home</a></li>
                                 <li><a class="text-white" href="index.html">About</a></li>
                                 <li><a class="text-white" href="index.html">Courses</a></li>
@@ -156,10 +185,10 @@
                         <div class="d-flex">
                             <div class="newsletter d-flex flex-column gap-3">
                                 <h3 class="text-white">Newsletter</h3>
-                                <form action="sumit-mail" class="d-flex">
-                                    <input type="email" id="email" name="email" required placeholder="email">
-                                    <button class="btn btn-accent"><i class="bi bi-arrow-right-short"></i></button>
-                                </form>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="button-addon2">
+                                    <button class="btn btn-accent" type="button" id="button-addon2"><i class="bi bi-arrow-right-short"></i></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -176,10 +205,9 @@
         </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
