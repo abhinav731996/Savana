@@ -17,6 +17,9 @@ $theme-colors: map-merge($theme-colors , $coustom_theme_colors);
     background-color: $primary-light;
 }
 
+.btn{
+    --bs-border-radius: none;
+}
 
 .footer-bottom{
     --bs-border-opacity: .3;
@@ -25,4 +28,23 @@ $theme-colors: map-merge($theme-colors , $coustom_theme_colors);
     width: 108px;
     height: 1.5px;
     background-color: black;
+}
+
+
+.cormorant {
+  font-family: "Cormorant", serif;
+//   font-optical-sizing: auto;
+//   font-weight: <weight>;
+//   font-style: normal;
+}
+.poppins{
+    font-family: "Poppins", sans-serif;
+}
+
+.why-us .container .poster{
+    bottom: -20%;
+}
+
+*{
+    font-family: "poppins", sans-serif;
 }
