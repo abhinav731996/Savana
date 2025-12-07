@@ -16,7 +16,58 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="about-savana  position-relative d-flex justify-content-center py-3bg-light h-auto ">
+
+     <header>
+        <nav class="navbar navbar-expand-xl bg-warning pt-3 pb-6">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="./assets/images/Logo.svg" alt="Site Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex gap-5 mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Courses</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="d-flex align-items-center gap-3">
+                        <a href="#"><img src="./assets/images/icons/facebook.png" alt="Facebook Icon"></a>
+                        <a href="#"><img src="./assets/images/icons/twitter.png" alt="Twitter Icon"></a>
+                        <a href="#"><img src="./assets/images/icons/linkedin.png" alt="linkedin Icon"></a>
+                        <a href="#"><img src="./assets/images/icons/search.png" alt="Search Icon"></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-savana  position-relative d-flex justify-content-center py-3bg-light h-auto ">
 
             <!-- Background image -->
             <div class="aboutsavana position-absolute top-0 start-0 " style="max-width: 100%;">
@@ -204,5 +255,167 @@
                 </div>
             </div>
         </section>
+
+        <section class="trainers py-5">
+            <div class="container">
+                <div class="row align-items-center g-6">
+                    <div class="col-12 col-xxl-5  mb-lg-0">
+                        <div class="d-flex align-items-center gap-2 pb-3">
+                            <p class="text-primary txt-19 fw-semibold m-0">OUR TRAINER</p>
+                            <div class="line-short"></div>
+                        </div>
+                        <h2 class="fs-2 font-family-cormorant text-secondary lh-2 mb-2">
+                            Talented trainers from all over the world
+                        </h2>
+                        <p class="mb-2 mb-md-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Praesent tellus leo, vestibulum a ipsum sed, suscipit sodales ex.
+                        </p>
+                        <a class="btn bg-primary text-white px-4 py-2" href="#">
+                            View More <img class="ps-2" src="./assets/images/icons/right-arrow.png"
+                                alt="Right Arrow Icon">
+                        </a>
+                    </div>
+                    <div class="col-12 col-xxl-7">
+                        <div class="row g-2 g-lg-4">
+                            <div class="col-md-6">
+                                <div class="position-relative trainer-card bg-danger p-4 text-center">
+                                    <img class="position-absolute d-none d-lg-block z-0 top-0 start-0"
+                                        src="./assets/images/icons/trainer-placeholder.png" alt="Trainer's Icons">
+                                    <div class="position-relative">
+                                        <img src="./assets/images/trainer-1.png" alt="Trainer Image"
+                                            class="trainer-img mb-1">
+                                        <h3 class="text-secondary mb-1">Jenny Owen</h3>
+                                        <p class="text-muted mb-2">Trainer</p>
+                                        <img src="./assets/images/icons/social-icons.png" alt="Social Icons"
+                                            class="social-set">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="position-relative trainer-card bg-danger p-4 text-center">
+                                    <img class="position-absolute d-none d-lg-block z-0 top-0 start-0"
+                                        src="./assets/images/icons/trainer-placeholder.png" alt="Trainer's Icons">
+                                    <div class="position-relative">
+                                        <img src="./assets/images/trainer-2.png" alt="Trainer Image"
+                                            class="trainer-img mb-1">
+                                        <h3 class="text-secondary mb-1">Robin Falco</h3>
+                                        <p class="text-muted mb-2">Trainer</p>
+                                        <img src="./assets/images/icons/social-icons.png" alt="Social Icons"
+                                            class="social-set">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="membership py-6 py-lg-8 my-5 mt-lg-7 mb-lg-8">
+            <div class="container position-relative d-flex flex-column align-items-center bg-primary py-5 py-lg-7">
+                <div class="d-flex align-items-center justify-content-center gap-1 pb-3">
+                    <div class="line-short"></div>
+                    <p class="text-light txt-19 fw-semibold">MEMBERSHIP</p>
+                    <div class="line-short"></div>
+                </div>
+                <h2 class="fs-2 font-family-cormorant text-light text-center pb-2">Become Savana Member</h2>
+                <p class="mx-1 mx-xl-250 text-center text-light pb-6">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Praesent tellus leo, vestibulum a ipsum sed, suscipit sodales ex. Vestibulum id varius risus.
+                    Fusce tempus tellus sed.</p>
+                <a class="btn bg-light text-primary px-2 py-1" href="#">Join Now <img class="ps-1"
+                        src="./assets/images/icons/membership-arrow.png" alt="Membership Arrow Icon"></a>
+                <img class="img-fluid position-absolute d-none d-lg-block top-0 start-0"
+                    src="./assets/images/icons/membership-ph-2.png" alt="Membership icon">
+                <img class="img-fluid position-absolute d-none d-lg-block bottom-0 end-0"
+                    src="./assets/images/icons/membership-ph.png" alt="Membership icon">
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="container">
+                <div class="d-flex gap-1 justify-content-center align-items-center pb-1 pb-lg-3">
+                    <div class="line-short"></div>
+                    <p class="text-primary txt-19 fw-semibold">TESTIMONIALS</p>
+                    <div class="line-short"></div>
+                </div>
+                <h2 class="fs-2 font-family-cormorant text-secondary text-center mb-3 mb-lg-6">Sweet review from our
+                    clients</h2>
+                <div class="row g-4">
+                    <div class="col-12 col-lg-6 col-xxl-4">
+                        <div class="bg-primary position-relative py-3 px-3">
+                            <div class="d-flex align-items-center justify-content-between pb-3">
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid pe-2" src="./assets/images/testimonial-img-1.png"
+                                        alt="testimonial img 1">
+                                    <div>
+                                        <h3 class="fs-4 font-family-cormorant text-light">Jane Froster</h3>
+                                        <p class="text-light txt-17">Client</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid pa-9" src="./assets/images/icons/star.png" alt="Star Icon">
+                                    <p class="fs-4 text-secondary font-family-cormorant">5.0</p>
+                                </div>
+                            </div>
+                            <i class="text-light">“Lorem ipsum dolor sit amet, consec tetur adi piscing elit. Praesent
+                                tellus leo, vesti bulum a ipsum sed, suscipit sodales ex. Vestibulum id varius risus.
+                                Fusce tempus tellus sed.”</i>
+                            <img class="position-absolute end-0 top-0"
+                                src="./assets/images/icons/testimonial-placeholder.png" alt="Placeholder Image">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xxl-4">
+                        <div class="position-relative py-3 px-3 bg-secondary">
+                            <div class="d-flex align-items-center justify-content-between pb-3">
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid pe-2" src="./assets/images/testimonial-img-2.png"
+                                        alt="testimonial img 1">
+                                    <div>
+                                        <h3 class="fs-4 font-family-cormorant text-light">Ninna Aguero</h3>
+                                        <p class="text-light txt-17">Client</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid pa-9" src="./assets/images/icons/star-2.png" alt="Star Icon">
+                                    <p class="fs-4 text-light font-family-cormorant">5.0</p>
+                                </div>
+                            </div>
+                            <i class="text-light">“Lorem ipsum dolor sit amet, consec tetur adi piscing elit. Praesent
+                                tellus leo, vesti bulum a ipsum sed, suscipit sodales ex. Vestibulum id varius risus.
+                                Fusce
+                                tempus tellus sed.”</i>
+                            <img class="position-absolute end-0 top-0"
+                                src="./assets/images/icons/testimonial-placeholder.png" alt="Placeholder Image">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xxl-4">
+                        <div class="position-relative py-3 px-3 bg-danger">
+                            <div class="d-flex align-items-center justify-content-between pb-3">
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid pe-2" src="./assets/images/testimonial-img-3.png"
+                                        alt="testimonial img 1">
+                                    <div>
+                                        <h3 class="fs-4 font-family-cormorant text-secondary">Samantha Kirk</h3>
+                                        <p class="text-success txt-17">Client</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <img class="img-fluid pa-9" src="./assets/images/icons/star-2.png" alt="Star Icon">
+                                    <p class="fs-4 text-secondary font-family-cormorant">5.0</p>
+                                </div>
+                            </div>
+                            <i class="text-success">“Lorem ipsum dolor sit amet, consec tetur adi piscing elit. Praesent
+                                tellus leo, vesti bulum a ipsum sed, suscipit sodales ex. Vestibulum id varius risus.
+                                Fusce
+                                tempus tellus sed.”</i>
+                            <img class="position-absolute end-0 top-0"
+                                src="./assets/images/icons/testimonial-placeholder.png" alt="Placeholder Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

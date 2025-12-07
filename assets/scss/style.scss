@@ -48,3 +48,7 @@ $theme-colors: map-merge($theme-colors , $coustom_theme_colors);
 *{
     font-family: "poppins", sans-serif;
 }
+.membership{
+    background-image: url(./../../assets/images/membership/placeholder.png);
+    background-size: cover;
+}
