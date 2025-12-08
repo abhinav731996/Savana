@@ -33,7 +33,7 @@ $theme-colors: map-merge($theme-colors , $coustom_theme_colors);
 }
 
 .nav-link{
-    --bs-nav-link-color: #513125;
+    --bs-nav-link-color: white;
 }
 
 .cormorant {
@@ -58,8 +58,9 @@ $theme-colors: map-merge($theme-colors , $coustom_theme_colors);
     background-size: cover;
 }
 
-.about-head{
-    background-image: url(./../../assets/images/about-page/nav/overlay.png);
+.contact-head{
+    background-image: url(./../../assets/images/contact-page/nav/overlay.png);
     background-size: cover;
+    background-repeat: no-repeat;
 
 }

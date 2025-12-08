@@ -17,7 +17,7 @@
 </head>
 <body>
 
-     <header>
+     <!-- <header>
         <nav class="navbar navbar-expand-xl bg-warning pt-3 pb-6">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="./assets/images/Logo.svg" alt="Site Logo"></a>
@@ -64,6 +64,102 @@
                 </div>
             </div>
         </nav>
+    </header> -->
+
+    <!-- <header>
+        <nav class="navbar navbar-expand-xl bg-warning pt-3 pb-6">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="./assets/image/Small.png" alt="Site Logo" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav d-flex gap-5 mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">page1</a></li>
+                                <li><a class="dropdown-item" href="#">page2</a></li>
+                                <li><a class="dropdown-item" href="#">page3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="d-flex align-items-center gap-3">
+                        <a href="#"><img src="./assets/image/facebook.png" alt="Facebook Icon" /></a>
+                        <a href="#"><img src="./assets/image/twitter.png" alt="Twitter Icon" /></a>
+                        <a href="#"><img src="./assets/image/linkedin.png" alt="linkedin Icon" /></a>
+                        <a href="#"><img src="./assets/image/search.png" alt="Search Icon" /></a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> -->
+
+    <header>
+          <!-- <nav class="navbar navbar-expand-lg py-lg-4 navbar-light bg-body">
+            <div class="container">
+                <a class="navbar-brand" href="index.html" aria-label="Click here to go to home page"><img
+                        class="img-fluid" src="./assets/images/logo/savana-logo.webp" alt="Site logo"></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-between align-items-center" id="collapsibleNavId">
+                    <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html" aria-current="page">Home <span
+                                    class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Page</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-dark rounded-pill">Get Started</a>
+                </div>
+            </div>
+        </nav> -->
+        <!-- Nav tabs -->
+        
+        <!-- Tab panes -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel">
+                
+            </div>
+            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+        </div>
+        
+        <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
+        <script>
+            var triggerEl = document.querySelector("#navId a");
+            bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
+        </script>
+        
     </header>
 
     <main>
@@ -127,24 +223,42 @@
         </section>
 
         <section class="choose-us">
-            <div class="container pt-8">
-                <div class="row position-relative">
-                    <div class="vdo col">
-                        <iframe class="ratio ratio-1x1" width="560" height="315"
-                            src="https://www.youtube.com/embed/dAqQqmaI9vY?si=Z5BAls6j6ojK70Ik"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="container position-relative pt-8">
+                <div class="row">
+                    <div class="position-relative vdo col-12 col-lg-6">
+                        <img class="img-fluid w-100 h-100" src="./assets/images/choose-vdo.jpg" alt="Video Title">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn position-absolute top-50 start-50" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            <img class="img-fluid" src="./assets/images/icons/play-button-2.png" alt="Play Button">
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-body position-relative p-0">
+                                        <button type="button" class="btn-close position-absolute z-3 start-100 top-0 translate-middle bg-light rounded-circle" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                        <iframe class="ratio ratio-1x1 d-block" width="560" height="315"
+                                        src="https://www.youtube.com/embed/dAqQqmaI9vY?si=Z5BAls6j6ojK70Ik"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <div class="d-flex gap-1 align-items-center pb-3">
+                    <div class="col-12 col-lg-6">
+                        <div class="d-flex gap-1 align-items-center pt-3 pt-lg-0 pb-3">
                             <p class="text-primary txt-19 fw-semibold">WHY CHOOSE US</p>
                             <div class="line-short"></div>
                         </div>
                         <h2 class="text-secondary font-family-cormorant font-50 pb-5">All about yoga, all the time</h2>
-                        <div class="bg-primary position-relative p-3 text-light">
+                        <div class="bg-primary position-relative p-6 text-light">
                             <h3 class="pb-2 font-family-cormorant">Comfort Place</h3>
-                            <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus
+                            <p class="pb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus
                                 leo, vestibulum a ipsum sed, suscipit sodales ex.</p>
                             <a class="text-light" href="#">Join The Course <img class="ps-1"
                                     src="./assets/images/icons/right-arrow.png" alt=""></a>
@@ -152,25 +266,25 @@
                                 alt="Choose Placeholder">
                         </div>
                     </div>
-                    <div class="poster d-flex gap-2">
-                        <div class="bg-secondary position-relative p-3 text-light">
-                            <h3 class="pb-2 font-family-cormorant">Expert Trainer</h3>
-                            <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus
-                                leo, vestibulum a ipsum sed, suscipit sodales ex.</p>
-                            <a class="text-light" href="#">Join The Course <img class="ps-1"
-                                    src="./assets/images/icons/right-arrow.png" alt=""></a>
-                            <img class="position-absolute end-0 bottom-0" src="./assets/images/icons/choose-ph.png"
-                                alt="Choose Placeholder">
-                        </div>
-                        <div class="bg-danger position-relative p-3 text-secondary">
-                            <h3 class="pb-2 font-family-cormorant">Affordable Price</h3>
-                            <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus
-                                leo, vestibulum a ipsum sed, suscipit sodales ex.</p>
-                            <a class="text-secondary" href="#">Join The Course <img class="ps-1"
-                                    src="./assets/images/icons/blog-arrow.png" alt=""></a>
-                            <img class="position-absolute end-0 bottom-0" src="./assets/images/icons/choose-ph.png"
-                                alt="Choose Placeholder">
-                        </div>
+                </div>
+                <div class="poster d-flex flex-column flex-lg-row gap-2">
+                    <div class="bg-secondary position-relative p-3 text-light">
+                        <h3 class="pb-2 font-family-cormorant">Expert Trainer</h3>
+                        <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus
+                            leo, vestibulum a ipsum sed, suscipit sodales ex.</p>
+                        <a class="text-light" href="#">Join The Course <img class="ps-1"
+                                src="./assets/images/icons/right-arrow.png" alt=""></a>
+                        <img class="position-absolute end-0 bottom-0" src="./assets/images/icons/choose-ph.png"
+                            alt="Choose Placeholder">
+                    </div>
+                    <div class="bg-danger position-relative p-3 text-secondary">
+                        <h3 class="pb-2 font-family-cormorant">Affordable Price</h3>
+                        <p class="pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus
+                            leo, vestibulum a ipsum sed, suscipit sodales ex.</p>
+                        <a class="text-secondary" href="#">Join The Course <img class="ps-1"
+                                src="./assets/images/icons/blog-arrow.png" alt=""></a>
+                        <img class="position-absolute end-0 bottom-0" src="./assets/images/icons/choose-ph.png"
+                            alt="Choose Placeholder">
                     </div>
                 </div>
             </div>
@@ -414,6 +528,78 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="try">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="container">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-md-4 bg-accent text-white p-4 position-relative">
+                                <img class="img-fluid position-absolute top-0 end-0" src="./assets/images/testimonial/shapes-bg.png" alt="shape">
+                                <div class="review-img d-flex justify-content-between ">
+                                    <div class="d-flex gap-1 mb-3">
+                                        <img class="img-fluid" src="./assets/images/testimonial/one.png" alt="people-image">
+                                        <div class="about-client">
+                                            <h5 class="text-white cormorant">Jane Froster</h5>
+                                            <p>Client</p>
+                                        </div>
+                                    </div>
+                                    <div class="star">
+                                        <img class="img-fluid" width="26px" src="./assets/images/testimonial/Star-1.png" alt="star">
+                                        <h4 class="cormorant d-inline text-white">5.0</h4>
+                                    </div>
+                                </div>
+                                <p class="fst-italic">“Lorem ipsum dolor sit amet, consec tetur adi piscing elit. Praesent tellus leo, vesti bulum a ipsum sed, suscipit sodales ex. Vestibulum id varius risus. Fusce tempus tellus sed.”</p>
+                            </div>
+
+                            <div class="col-md-4 bg-secondary text-white p-4 position-relative">
+                                <img class="img-fluid position-absolute top-0 end-0" src="./assets/images/testimonial/shapes-bg.png" alt="shape">
+                                <div class="review-img d-flex justify-content-between ">
+                                    <div class="d-flex gap-1 mb-3">
+                                        <img class="img-fluid" src="./assets/images/testimonial/two.png" alt="people-image">
+                                        <div class="about-client">
+                                            <h5 class="text-white cormorant">Ninna Aguero</h5>
+                                            <p>Client</p>
+                                        </div>
+                                    </div>
+                                    <div class="star">
+                                        <img class="img-fluid" width="26px" src="./assets/images/testimonial/Star-2.png" alt="star">
+                                        <h4 class="cormorant d-inline text-white">5.0</h4>
+                                    </div>
+                                </div>
+                                <p class="fst-italic">“Lorem ipsum dolor sit amet, consec tetur adi piscing elit. Praesent tellus leo, vesti bulum a ipsum sed, suscipit sodales ex. Vestibulum id varius risus. Fusce tempus tellus sed.”</p>
+                            </div>
+
+                            <div class="col-md-4 bg-primary  p-4 position-relative">
+                                <img class="img-fluid position-absolute top-0 end-0" src="./assets/images/testimonial/shapes-bg.png" alt="shape">
+                                <div class="review-img d-flex justify-content-between ">
+                                    <div class="d-flex gap-1 mb-3">
+                                        <img class="img-fluid" src="./assets/images/testimonial/three.png" alt="people-image">
+                                        <div class="about-client">
+                                            <h5 class="cormorant">Samantha Kirk</h5>
+                                            <p>Client</p>
+                                        </div>
+                                    </div>
+                                    <div class="star">
+                                        <img class="img-fluid" width="26px" src="./assets/images/testimonial/Star-3.png" alt="star">
+                                        <h4 class="cormorant d-inline ">5.0</h4>
+                                    </div>
+                                </div>
+                                <p class="fst-italic">“Lorem ipsum dolor sit amet, consec tetur adi piscing elit. Praesent tellus leo, vesti bulum a ipsum sed, suscipit sodales ex. Vestibulum id varius risus. Fusce tempus tellus sed.”</p>
+                            </div>
+
+                        </div>
+                    </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
     </main>
