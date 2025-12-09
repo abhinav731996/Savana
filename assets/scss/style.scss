@@ -64,6 +64,13 @@ $theme-colors: map-merge($theme-colors , $coustom_theme_colors);
 
 }
 
+.contact-head{
+    background-image: url(./../../assets/images/contact-page/nav/overlay.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 // .about-savana{
 //     background-image: url(./../images/about/group-bg.png);
 //     background-size: cover;
