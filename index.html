@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
-
+    <meta name="description" content="Bend your mind, inspire yourself">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,7 +24,7 @@
 
         <nav class="navbar navbar-expand-lg">
             <div class="container mt-3">
-                <div class="d-flex justify-content-between align-items-center gap-10 mx-auto">
+                
                     <a class="navbar-brand" href="index.html"><img class="img-fluid"
                             src="./assets/images/logo/savana-logo.webp" alt="logo" /></a>
 
@@ -34,8 +34,8 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse gap-10" id="navbarScroll">
-                        <ul class="navbar-nav my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                    <div class="collapse navbar-collapse gap-10 justify-content-end " id="navbarScroll">
+                        <ul class="navbar-nav my-lg-0 navbar-nav-scroll mx-auto" style="--bs-scroll-height: 100px">
                             <li class="nav-item active">
                                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             </li>
@@ -102,7 +102,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                
             </div>
         </nav>
     </header>
@@ -120,9 +120,9 @@
                                 <div class="line"></div>
                             </div>
                             <div class="banner-about mt-1">
-                                <h2 class="fw-light cormorant">
+                                <h1 class="fw-light fs-2 cormorant">
                                     Bend your mind, inspire yourself
-                                </h2>
+                                </h1>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
                                     elit tellus, luctus necullamcorper mattis, pulvinar dapibus
@@ -183,12 +183,12 @@
 
         <section class="why-us mt-6 mb-8">
             <div class="container position-relative">
-                <div class="row justify-content-center align-items-center">
+                <div class="row">
                     <div class="col-md-6">
                         <div class="position-relative">
                             <img class="img-fluid" src="./assets/images/why-us/placeholder.png" alt="yoga-image" />
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn position-absolute top-50 start-50" data-bs-toggle="modal"
+                            <button type="button" class="btn position-absolute top-50 start-50 translate-middle" data-bs-toggle="modal"
                                 data-bs-target="#staticBackdrop">
                                 <img class="img-fluid" src="./assets/images/why-us/play-button.png" alt="play-button" />
                             </button>
@@ -216,7 +216,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 pb-6">
                         <div class="sub-about d-flex align-items-center gap-1">
                             <h6 class="sub-heading mt-1 text-accent fw-semibold">
                                 Why Choose US
@@ -240,9 +240,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="row poster position-absolute start-50 end-100">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-5">
+                <div class="row poster position-absolute offset-lg-1">
+                    <!-- <div class="col-md-1"></div> -->
+                    <div class="col-md-5 flex-grow-1">
                         <div class="comfort bg-secondary position-relative text-white p-4">
                             <h3 class="text-white fw-light cormorant">Expert Trainer</h3>
                             <p class="">
@@ -257,7 +257,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-5">
+                    <div class="col-md-5 flex-grow-1 px-3">
                         <div class="comfort bg-primary position-relative p-4">
                             <h3 class="fw-light cormorant">Comfort Place</h3>
                             <p class="">
@@ -553,83 +553,89 @@
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="container">
-                            <div class="row d-flex justify-content-between">
-                                <div class="col-md-4 bg-accent text-white p-4 position-relative">
-                                    <img class="img-fluid position-absolute top-0 end-0"
-                                        src="./assets/images/testimonial/shapes-bg.png" alt="shape" />
-                                    <div class="review-img d-flex justify-content-between">
-                                        <div class="d-flex gap-1 mb-3">
-                                            <img class="img-fluid" src="./assets/images/testimonial/one.png"
-                                                alt="people-image" />
-                                            <div class="about-client">
-                                                <h5 class="text-white cormorant">Jane Froster</h5>
-                                                <p>Client</p>
+                            <div class="row d-flex justify-content-between gx-4">
+                                <div class="col-md-4 ">
+                                    <div class="bg-accent p-4 text-white  position-relative">
+                                        <img class="img-fluid position-absolute top-0 end-0"
+                                            src="./assets/images/testimonial/shapes-bg.png" alt="shape" />
+                                        <div class="review-img d-flex justify-content-between">
+                                            <div class="d-flex gap-1 mb-3">
+                                                <img class="img-fluid" src="./assets/images/testimonial/one.png"
+                                                    alt="people-image" />
+                                                <div class="about-client">
+                                                    <h5 class="text-white cormorant">Jane Froster</h5>
+                                                    <p>Client</p>
+                                                </div>
+                                            </div>
+                                            <div class="star">
+                                                <img class="img-fluid" width="26px"
+                                                    src="./assets/images/testimonial/Star-1.png" alt="star" />
+                                                <h4 class="cormorant d-inline text-white">5.0</h4>
                                             </div>
                                         </div>
-                                        <div class="star">
-                                            <img class="img-fluid" width="26px"
-                                                src="./assets/images/testimonial/Star-1.png" alt="star" />
-                                            <h4 class="cormorant d-inline text-white">5.0</h4>
-                                        </div>
+                                        <p class="fst-italic">
+                                            “Lorem ipsum dolor sit amet, consec tetur adi piscing
+                                            elit. Praesent tellus leo, vesti bulum a ipsum sed,
+                                            suscipit sodales ex. Vestibulum id varius risus. Fusce
+                                            tempus tellus sed.”
+                                        </p>
                                     </div>
-                                    <p class="fst-italic">
-                                        “Lorem ipsum dolor sit amet, consec tetur adi piscing
-                                        elit. Praesent tellus leo, vesti bulum a ipsum sed,
-                                        suscipit sodales ex. Vestibulum id varius risus. Fusce
-                                        tempus tellus sed.”
-                                    </p>
                                 </div>
 
-                                <div class="col-md-4 bg-secondary text-white p-4 position-relative">
-                                    <img class="img-fluid position-absolute top-0 end-0"
-                                        src="./assets/images/testimonial/shapes-bg.png" alt="shape" />
-                                    <div class="review-img d-flex justify-content-between">
-                                        <div class="d-flex gap-1 mb-3">
-                                            <img class="img-fluid" src="./assets/images/testimonial/two.png"
-                                                alt="people-image" />
-                                            <div class="about-client">
-                                                <h5 class="text-white cormorant">Ninna Aguero</h5>
-                                                <p>Client</p>
+                                <div class="col-md-4">
+                                    <div class="bg-secondary text-white p-4 position-relative">
+                                        <img class="img-fluid position-absolute top-0 end-0"
+                                            src="./assets/images/testimonial/shapes-bg.png" alt="shape" />
+                                        <div class="review-img d-flex justify-content-between">
+                                            <div class="d-flex gap-1 mb-3">
+                                                <img class="img-fluid" src="./assets/images/testimonial/two.png"
+                                                    alt="people-image" />
+                                                <div class="about-client">
+                                                    <h5 class="text-white cormorant">Ninna Aguero</h5>
+                                                    <p>Client</p>
+                                                </div>
+                                            </div>
+                                            <div class="star">
+                                                <img class="img-fluid" width="26px"
+                                                    src="./assets/images/testimonial/Star-2.png" alt="star" />
+                                                <h4 class="cormorant d-inline text-white">5.0</h4>
                                             </div>
                                         </div>
-                                        <div class="star">
-                                            <img class="img-fluid" width="26px"
-                                                src="./assets/images/testimonial/Star-2.png" alt="star" />
-                                            <h4 class="cormorant d-inline text-white">5.0</h4>
-                                        </div>
+                                        <p class="fst-italic">
+                                            “Lorem ipsum dolor sit amet, consec tetur adi piscing
+                                            elit. Praesent tellus leo, vesti bulum a ipsum sed,
+                                            suscipit sodales ex. Vestibulum id varius risus. Fusce
+                                            tempus tellus sed.”
+                                        </p>
                                     </div>
-                                    <p class="fst-italic">
-                                        “Lorem ipsum dolor sit amet, consec tetur adi piscing
-                                        elit. Praesent tellus leo, vesti bulum a ipsum sed,
-                                        suscipit sodales ex. Vestibulum id varius risus. Fusce
-                                        tempus tellus sed.”
-                                    </p>
                                 </div>
 
-                                <div class="col-md-4 bg-primary p-4 position-relative">
-                                    <img class="img-fluid position-absolute top-0 end-0"
-                                        src="./assets/images/testimonial/shapes-bg.png" alt="shape" />
-                                    <div class="review-img d-flex justify-content-between">
-                                        <div class="d-flex gap-1 mb-3">
-                                            <img class="img-fluid" src="./assets/images/testimonial/three.png"
-                                                alt="people-image" />
-                                            <div class="about-client">
-                                                <h5 class="cormorant">Samantha Kirk</h5>
-                                                <p>Client</p>
+                                <div class="col-md-4 ">
+                                    <div class="bg-primary p-4 position-relative">
+                                        <img class="img-fluid position-absolute top-0 end-0"
+                                            src="./assets/images/testimonial/shapes-bg.png" alt="shape" />
+                                        <div class="review-img d-flex justify-content-between">
+                                            <div class="d-flex gap-1 mb-3">
+                                                <img class="img-fluid" src="./assets/images/testimonial/three.png"
+                                                    alt="people-image" />
+                                                <div class="about-client">
+                                                    <h5 class="cormorant">Samantha Kirk</h5>
+                                                    <p>Client</p>
+                                                </div>
+                                            </div>
+                                            <div class="star">
+                                                <img class="img-fluid" width="26px"
+                                                    src="./assets/images/testimonial/Star-3.png" alt="star" />
+                                                <h4 class="cormorant d-inline">5.0</h4>
                                             </div>
                                         </div>
-                                        <div class="star">
-                                            <img class="img-fluid" width="26px"
-                                                src="./assets/images/testimonial/Star-3.png" alt="star" />
-                                            <h4 class="cormorant d-inline">5.0</h4>
-                                        </div>
+                                        <p class="fst-italic">
+                                            “Lorem ipsum dolor sit amet, consec tetur adi piscing
+                                            elit. Praesent tellus leo, vesti bulum a ipsum sed,
+                                            suscipit sodales ex. Vestibulum id varius risus. Fusce
+                                            tempus tellus sed.”
+                                        </p>
                                     </div>
-                                    <p class="fst-italic">
-                                        “Lorem ipsum dolor sit amet, consec tetur adi piscing
-                                        elit. Praesent tellus leo, vesti bulum a ipsum sed,
-                                        suscipit sodales ex. Vestibulum id varius risus. Fusce
-                                        tempus tellus sed.”
-                                    </p>
                                 </div>
                             </div>
                         </div>
